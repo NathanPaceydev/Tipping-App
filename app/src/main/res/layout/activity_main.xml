@@ -12,14 +12,15 @@
     <!-- Cost of Service Editable Text -->
     <EditText
         android:id="@+id/cost_of_service"
-        android:hint="@string/cost_of_service"
-        android:layout_marginTop="4dp"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4dp"
+        android:autofillHints="@string/cost_of_service"
+        android:hint="@string/cost_of_service"
         android:inputType="numberDecimal"
-        android:autofillHints="@string/cost_of_service" />
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- How was the service plain text -->
     <TextView
@@ -78,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:checked="true"
+        android:minHeight="48dp"
         android:text="@string/round_up_the_tip"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tip_radio_group"
